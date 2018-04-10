@@ -1,11 +1,10 @@
-# BaiduExporter
-
-##因为要获取Cookies，无法单纯使用脚本实现，必须插件模式加载。
+# BaiduExporter [![Build Status](https://img.shields.io/circleci/project/acgotaku/BaiduExporter/master.svg)](https://circleci.com/gh/acgotaku/BaiduExporter/tree/master)
 
 可以方便的把百度网盘的下载地址导出到 aria2/aria2-rpc，支持 YAAW。
 
 ## Usage
 
+- 非SVIP用户下载分享文件须先将文件保存到自己网盘以获得较快的下载速度。
 - 插件的设置必须保存之后才会生效。
 - 推荐设置：
     - Set `--rpc-secret=<secret>` if you are using aria2 1.18.4(or higher) with 'JSON-RPC PATH' like http://token:secret@hostname:port/jsonrpc
@@ -16,15 +15,11 @@
 
 ## Install
 
-全面支持 Chrome, Firefox, Edge 和 Safari：
+* Chrome : Click **Settings** -> **Extensions**, drag `BaiduExporter.crx` file to the page, install it, or check **Developer mode** -> **Load unpacked extension**, navigate to the `chrome/release` folder.
+* Firefox : Open **about:debugging** in Firefox, click "Load Temporary Add-on" and navigate to the `chrome/release` folder, select `manifest.json`, click OK.
+## Contribution
 
-* Chrome : Click **Settings** -> **Extensions** -> Check **Developer mode**-> **Load unpacked extension**, navigate to the `chrome` folder, click OK.
-* Firefox : Open **about:debugging** in Firefox, click "Load Temporary Add-on" and navigate to the `chrome` folder, click OK.
-* Safari : Install Chrome or Firefox on Mac.
-* Edge: You need at least Windows 10 build 14342
-    1. Open [about:flags](about:flags), Check `Enable extension developer features`, Restart.
-    2. Clone repo to a local read-write folder.
-    3. Click **More(...)** -> **Extensions** -> **Load extension**, navigate to the `chrome` folder, click OK.
+Please make sure to read the [Contributing Guide](https://github.com/acgotaku/BaiduExporter/blob/master/.github/CONTRIBUTING.md) before making a pull request.
 
 ## Issue 须知
 
@@ -44,15 +39,8 @@
 
 BaiduExporter is licensed under [GNU General Public License](https://www.gnu.org/licenses/gpl.html) Version 3 or later.
 
-BaiduExporter is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+BaiduExporter is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-BaiduExporter is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+BaiduExporter is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with BaiduExporter.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License along with BaiduExporter.  If not, see <http://www.gnu.org/licenses/>.
